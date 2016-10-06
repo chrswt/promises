@@ -13,7 +13,7 @@ var pluckFirstLineFromFile = (filePath, callback) => {
     } else {
       callback(err, data.split('\n')[0]);
     }
-  })
+  });
 };
 
 // This function should retrieve the status code of a GET request to `url`
@@ -24,7 +24,7 @@ var getStatusCode = (url, callback) => {
     } else {
       callback(err, res.statusCode);
     }
-  })
+  });
 };
 
 // Export these functions so we can test them and reuse them in later exercises
